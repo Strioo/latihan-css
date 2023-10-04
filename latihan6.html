@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 6 Desain</title>
+    <link rel="stylesheet" href="Latihan6.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .gambar{
+            display: flex;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+            animation: pulse 2s infinite;
+        }
+
+        
+
+        #container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeInUp 1s ease-out;
+            text-align: center;
+            justify-content: center;
+        }
+
+        
+
+        h1 {
+            color: white;
+        }
+
+       
+        h3 {
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        header,
+        footer {
+            animation: colorChange 5s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="gambar">
+            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="Logo Starbuck">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPN_dSZjeNZr8RaLyR4NSupNnSIpEg9AHj7NyUzeO5H6rjaMccnKmkUv7KHlyI6aFcXKI&usqp=CAU" alt="">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <h1>Brand Terkenal</h1>
+    </header>
+    <div id="container">
+        <h3> Starbuck</h3>
+        <p>Starbucks, brand kopi global yang sangat populer, dikenal dengan suasana nyaman di kedainya dan beragam minuman kopi dan non-kopi yang lezat</p>
+        <h3>Coca Cola</h3>
+        <p>Coca-Cola, salah satu brand minuman ringan terkenal di seluruh dunia, telah menjadi ikon kultur pop dengan rasa khasnya yang mendalam dan logo merahnya yang ikonik.</p>
+        <h3>MCD</h3>
+        <p>McDonald's, sering disingkat sebagai MCD, adalah salah satu restoran cepat saji terbesar di dunia yang terkenal dengan menu beragam seperti Big Mac, Happy Meal, dan kentang gorengnya yang lezat.</p>
+    </div>
+    <footer class="footer">
+        &copy; 2023 Latihan 6 Desain
+    </footer>
+</body>
+
+</html>
