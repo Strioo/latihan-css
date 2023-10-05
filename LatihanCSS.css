@@ -20,7 +20,7 @@ hr {
     margin: 20px auto;
 }
 
-a {
+a:link{
     color: midnightblue;
     text-decoration: none;
     position: relative;
@@ -28,9 +28,16 @@ a {
     margin-bottom: 20px;
     display: inline-block;
 }
+a:visited{
+    color: orange;
+}
 
 a:hover {
     color: green;
+}
+
+a:active{
+    color: darkcyan;
 }
 
 a::before {
